@@ -4,7 +4,7 @@ The following is an approximate* list of the success-critical stakeholders in th
   - NLC Staff
 - Developers
   - Professor Mattingly
-  - David Magda
+  - David Magda (project manager)
   - Any coworker brought on
 - Future Maintainers
   - Unknown
