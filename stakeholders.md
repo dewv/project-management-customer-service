@@ -5,8 +5,6 @@ The following is an approximate* list of the success-critical stakeholders in th
 - Developers
   - Professor Mattingly
   - David Magda (project manager)
-  - Any coworker brought on
-- Future Maintainers
-  - Unknown
+  - Any other developers
   
 \*  This can be altered at any time as seen fit
