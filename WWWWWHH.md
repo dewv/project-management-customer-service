@@ -14,7 +14,7 @@ Success critical stakeholders include: the customer (NLC staff), the users, the 
 Issues will be created in the operations repo
 
 ## How:
-Using GIT REST API v3 to start
+Start by researching into GitHub Apps, OAuth Apps, and RESt API v3
 
 ## How much:
 Our only cost will be time
