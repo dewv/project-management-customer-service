@@ -2,6 +2,7 @@ The following is an approximate* list of the success-critical stakeholders in th
 
 - Users/Customer
   - NLC Staff
+  - Students
 - Developers
   - Professor Mattingly (CEO)
   - David Magda (project manager)
