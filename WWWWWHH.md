@@ -5,7 +5,7 @@ To allow interactions (service issues, requests, ideas, etc.) from users
 An entry form for user interactions that will allow users to submit issues, requests, ideas, etc. and be able to see what they have sent in and any discussion we have within the comments of their issue
 
 ## When: 
-During this semester
+During this semester, faster is preferable
 
 ## Who: 
 Success critical stakeholders include: the customer (NLC staff), the users, the project manager(s), and the developers
