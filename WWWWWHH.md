@@ -14,7 +14,7 @@ Success critical stakeholders include: the customer (NLC staff), the users, the 
 Issues will be created in the operations repo
 
 ## How:
-Start by researching into GitHub Apps and REST API v3
+Start by researching into GitHub Apps and REST API v3 or, most likely, creating our own database to hold these and creating our own user interface to interact with these service requests and allow the users to see their own requests
 
 ## How much:
 Our only cost will be time
