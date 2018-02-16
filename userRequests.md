@@ -1,1 +1,2 @@
 We want to alter [this](https://www.usenix.org/legacy/publications/library/proceedings/lisa99/full_papers/limoncelli/limoncelli_html/index.html) document to fit our needs. We may or may not need all of the steps depending on how the customer service application is going to be executed.
+We will want to follow a strict guideline on how to handle the requests from the start rather than trying to catch up later.
