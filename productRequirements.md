@@ -7,4 +7,5 @@
     - Allow them to sort their "requests"
     - Allow them to see the comments we have on their issues
     - Allow them to see where we are at with their "request" in our process
+    
 5a. Possibly through webpage that can load from the created database
