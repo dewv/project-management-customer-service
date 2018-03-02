@@ -4,7 +4,7 @@
 Create database to capture specified entries
 
 #### HTML Form
-  - Needs to pull the username from NLC
+  - Needs to have place for contact name
   - Needs to pull the date from server
   - Drop-down list for different 'flags'
     * Bug
@@ -21,3 +21,29 @@ Create database to capture specified entries
 
 #### Connect Database to Github Issues
   - Needs research 
+
+#### Create Database and Tables
+  - Create databse with MySQL
+  - Create two tables
+  - ##### Table 1:
+    - Name: issue
+    - pk (autonumber)
+    - contactName
+    - anonymous [Y/N]
+    - datetime [autocapture]
+    - subject
+    - description
+    - emergency
+    - ghRepoName
+    - ghIssueNumber
+  
+  
+  - ##### Table 2:
+    - Name: comment
+    - pk
+    - issueFK
+    - datetime [autocapture]
+    - body
+    - newStatus [default: Null]
+  
+  
