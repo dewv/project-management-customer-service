@@ -3,26 +3,26 @@
 
 Create database to capture specified entries
 
-#### HTML Form
+#### HTML Form (Views)
   - Needs to have place for contact name
   - Needs to pull the date from server
-  - Drop-down list for different 'flags'
+  - //Drop-down list for different 'flags'
     * Bug
     * Idea/Suggestion
-    * [Need name for service interruptions]
+    * [Need name for service interruptions]//
   - Text box for problem/suggestion
 
 
-#### UI
+#### UI (Views)
   - Separate HTML webpage
   - Read from databse and display neatly
   - Ability to sort 'requests'
 
 
-#### Connect Database to Github Issues
+#### Connect Database to Github Issues (Controller)
   - Needs research 
 
-#### Create Database and Tables
+#### Create Database and Tables (Model)
   - Create databse with MySQL
   - Create two tables
   - ##### Table 1:
