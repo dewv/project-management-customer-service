@@ -40,7 +40,7 @@ Create database to capture specified entries
   
   - ##### Table 2:
     - Name: comment
-    - pk
+    - pk (autonumber?)
     - issueFK
     - datetime [autocapture]
     - body
