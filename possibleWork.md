@@ -11,6 +11,8 @@ Create database to capture specified entries
     * Idea/Suggestion
     * [Need name for service interruptions]//
   - Text box for problem/suggestion
+  - Submit button
+  - If successfully sent, give feedback to sender ("Request Received")
 
 
 #### UI (Views)
