@@ -1,63 +1,42 @@
-## Possible issues to work on ##
+Issue 1:
 
+Create a MySQL table called `issue` that includes the following:
+- pk (autonumber)
+- contactName
+- anonymous [Y/N]
+- datetime
+- subject
+- emergency
+- ghRepoName
+- ghIssueNumber
 
-Create database to capture specified entries
+Issue 2:
 
-#### HTML Form (Views)
-  - Needs to have place for contact name
-  - Needs to pull the date from server
-  - //Drop-down list for different 'flags'
-    * Bug
-    * Idea/Suggestion
-    * [Need name for service interruptions]//
-  - Text box for problem/suggestion
-  - Submit button
-  - If successfully sent, give feedback to sender ("Request Received")
-  - Submitting the form:
-    - Creates record in `issue` table and record in `comment` table
-    - Creates Github issue(?)
+Create a MySQL table called `comment` that includes the following:
+- pk (autonumber)
+- issueFK (foreign key: the PK of the associated `issue` record)
+- datetime
+- body
 
+When an issue is created, an associated `comment` record will also be created
 
-#### UI (Views)
-  - Separate HTML webpage
-  - Read from databse and display neatly
-  - Ability to sort 'requests'
-  - Non-staff users can see only their requests
-  - Staff users can see all requests
+Issue 3:
 
+Create a MySQL table called `statusHistory` that includes the following:
+- pk (autonumber)
+- issueFK (foreign key: the PK of the associated `issue` record)
+- datetime
+- newStatus (Valid values are values of refStatus.statusCode)
 
-#### Connect Database to Github Issues (Controller)
-  - Needs research 
+This table is to record the history of status changes. When an `issue` is created, a `statusHistory` record is created with `newStatus` set to the minimum value of the `refStatus` table.
 
-#### Create Database and Tables (Model)
-  - Create databse with MySQL
-  - Create two tables
-  - ##### Table 1:
-    - Name: issue
-    - pk (autonumber)
-    - contactName
-    - anonymous [Y/N]
-    - datetime [autocapture]
-    - subject
-    - description
-    - emergency
-    - ghRepoName
-    - ghIssueNumber
-  
-  
-  - ##### Table 2:
-    - Name: comment
-    - pk (autonumber?)
-    - issueFK
-    - datetime [autocapture]
-    - body
-    - newStatus [default: Null]
-  
-#### Github Issue
-  - Body should include a link to (server)/customerIssue/:id/edit, where :id is pk of issue table record.
-  
-#### Comments
-  - Users can create comments
-  - Staff members(?) can also change the status value of the issue/request
-    - Status values must be an immediate successor or predecessor
-  - For REST API, this is an edit to the body of the issue in Github
+Issue 4:
+
+Create a MySQL table called `refStatus` - which is a "reference" or lookup table - that includes the following:
+
+statusCode | StatusLabel
+10 | 'Request Received'
+20 | 'Problem confirmed'
+30 | 'Fix defined'
+40 | 'Fix implemented'
+50 | 'Fix confirmed'
