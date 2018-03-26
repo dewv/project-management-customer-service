@@ -45,3 +45,42 @@ statusCode | StatusLabel
 40 | 'Fix implemented'
 
 50 | 'Fix confirmed'
+
+
+Issue 5: 
+
+Creation of the model:
+
+  * `CustomerIssue` is the class structure and it will mirror the `issue` database table
+    * Will have additional properties for `comments` and `status`
+      * `comments` will be an array of all associated `comment` records from the DB
+      * `status` is the value from the most recent `statusHistory` record
+  
+  * the `save()` method:
+    * When an `issue` record is created, the Github API must create an issue with the appropriate label via the webhook
+    
+  * A new method: `sync()`
+    * The webhook will activate the method
+    * Reference the psuedocode for more info:
+      * `// Ignore webhook calls for GH Issues that are not Customer Issues
+          if the GH Issue is not in the mysql `issue` table then 
+	          stop
+
+          // Record new comments on Customer Issues
+          if there is a new GH Issue comment that is not in the mysql `comment` table then
+          	if the commment contains a status label then
+	          	if the label is invalid then
+			          log it
+			          stop
+		          else
+			          create a statusHistory record
+	          add a record to the `comment` table`
+            
+Issue 6:
+
+Create a web form that includes:
+  - contactName
+  - Emergency (yes or no)
+  - Subject
+  - Body
+  - Submit button
