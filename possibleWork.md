@@ -35,8 +35,13 @@ Issue 4:
 Create a MySQL table called `refStatus` - which is a "reference" or lookup table - that includes the following:
 
 statusCode | StatusLabel
+
 10 | 'Request Received'
+
 20 | 'Problem confirmed'
+
 30 | 'Fix defined'
+
 40 | 'Fix implemented'
+
 50 | 'Fix confirmed'
