@@ -70,21 +70,21 @@ Creation of the model:
 
           // Record new comments on Customer Issues
 	  
-          if there is a new GH Issue comment that is not in the mysql `comment` table then
+          	if there is a new GH Issue comment that is not in the mysql `comment` table then
 	  
-          	if the commment contains a status label then
+          		if the commment contains a status label then
 		
-	          	if the label is invalid then
+	          		if the label is invalid then
 			
 			          log it
 				  
 			          stop
 				  
-		          else
+		          	else
 			  
 			          create a statusHistory record
 				  
-	          add a record to the `comment` table`
+	          	add a record to the `comment` table`
             
 Issue 6:
 
