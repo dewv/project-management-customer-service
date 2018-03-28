@@ -63,17 +63,27 @@ Creation of the model:
     * The webhook will activate the method
     * Reference the psuedocode for more info:
       * // Ignore webhook calls for GH Issues that are not Customer Issues
+      
           if the GH Issue is not in the mysql `issue` table then 
+	  
 	          stop
 
           // Record new comments on Customer Issues
+	  
           if there is a new GH Issue comment that is not in the mysql `comment` table then
+	  
           	if the commment contains a status label then
+		
 	          	if the label is invalid then
+			
 			          log it
+				  
 			          stop
+				  
 		          else
+			  
 			          create a statusHistory record
+				  
 	          add a record to the `comment` table`
             
 Issue 6:
