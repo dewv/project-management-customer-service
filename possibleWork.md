@@ -62,7 +62,7 @@ Creation of the model:
   * A new method: `sync()`
     * The webhook will activate the method
     * Reference the psuedocode for more info:
-      * `// Ignore webhook calls for GH Issues that are not Customer Issues
+      * // Ignore webhook calls for GH Issues that are not Customer Issues
           if the GH Issue is not in the mysql `issue` table then 
 	          stop
 
