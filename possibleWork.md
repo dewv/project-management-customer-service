@@ -49,7 +49,7 @@ statusCode | StatusLabel
 
 Issue 5: 
 
-Creation of the model:
+Creation of the model class `CustomerIssue`:
 
   * `CustomerIssue` is the class structure and it will mirror the `issue` database table
     * Will have additional properties for `comments` and `status`
@@ -57,7 +57,7 @@ Creation of the model:
       * `status` is the value from the most recent `statusHistory` record
   
   * the `save()` method:
-    * When an `issue` record is created, the Github API must create an issue with the appropriate label via the webhook
+    * When an `issue` record is created, the Github API must create an issue with the appropriate status label via the webhook
     
   * A new method: `sync()`
     * The webhook will activate the method
@@ -85,7 +85,9 @@ Creation of the model:
 			          create a statusHistory record
 				  
 	          	add a record to the `comment` table`
-            
+			
+    * For additional info, go [here](https://github.com/dewv/customerService/blob/master/dev/customerIssueService.md)
+    
 Issue 6:
 
 Create a web form that includes:
