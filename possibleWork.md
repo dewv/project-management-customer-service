@@ -96,3 +96,11 @@ Create a web form that includes:
   - Subject
   - Body
   - Submit button
+
+
+`POST /customerIssue/sync`
+This is triggered by a GitHub webhook. GitHub will make this request to our app when any Issue comment is created, updated, or deleted in any repo(s) that we choose. This allows our app to synchronize MySQL data with the new changes.
+
+- [ ] Change the controller's `defineCommands()` function to include a new command for sync. 
+- [ ] Write `sync()`. When an Issue comment is created, updated, or deleted, 
+- [ ] Write the associated test code.
